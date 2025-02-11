@@ -80873,7 +80873,7 @@ ag(){return new A.Rw(A.b(["Code is like humor. When you have to explain it, it\u
 A.Rw.prototype={
 ao(){this.aL()
 A.asx(B.iu,new A.akA(this))},
-J(a){var s=null,r=A.dK(s,A.awr("creative.gif",B.zn,s,s),B.t,s,s,s,s,200,s,s,s,s,200),q=this.e
+J(a){var s=null,r=A.dK(s,A.awr("assets/creative.gif",B.zn,s,s),B.t,s,s,s,s,200,s,s,s,s,200),q=this.e
 return A.ay7(s,A.dK(s,A.k7(A.eb(A.b([r,B.by,A.aFK(A.bL(this.d[q],new A.cu(q,t.f3),s,s,s,B.Sl,B.cI,s),B.dX,A.aP6()),B.by,new A.wr(s,s,s,new A.vM(A.aF(204,B.j.gm(0)>>>16&255,B.j.gm(0)>>>8&255,B.j.gm(0)&255),t.ZU),s,s,s)],t.p),B.N,B.cB,B.P),s,s),B.t,s,s,new A.cS(B.j,s,s,s,s,s,B.au),s,s,s,s,s,s,s))}}
 A.akA.prototype={
 $1(a){var s=this.a
@@ -80895,7 +80895,7 @@ q=t.p
 m=A.b([A.eb(A.b([s,B.ew,A.bL("Software Development\nEngineer",p,p,p,p,A.cW(p,p,A.aF(B.c.aD(178.5),r.gm(0)>>>16&255,r.gm(0)>>>8&255,r.gm(0)&255),p,p,p,p,p,p,p,p,m,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),B.cI,p),new A.N1(o,p)],q),B.N,B.cB,B.P)],q)
 if(n>=700){if(n>=900)n=300
 else n=n>=800?250:200
-m.push(new A.xk("avatar.png",n,B.iu,p))}return A.adB(A.eb(A.b([A.fl(m,B.N,B.j7,B.P),B.by],q),B.N,B.X,B.P),p)}}
+m.push(new A.xk("assets/avatar.png",n,B.iu,p))}return A.adB(A.eb(A.b([A.fl(m,B.N,B.j7,B.P),B.by],q),B.N,B.X,B.P),p)}}
 A.Aa.prototype={
 ag(){var s=t.A
 return new A.TC(A.Mk(),new A.bv(null,s),new A.bv(null,s),new A.bv(null,s))}}
