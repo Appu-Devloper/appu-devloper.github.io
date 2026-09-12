@@ -1,55 +1,151 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects | Appu M</title>
-  <meta name="description" content="Projects by Appu M across mobile, backend, and IoT platforms." />
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&amp;family=Source+Serif+4:wght@400;600&amp;display=swap" rel="stylesheet" />
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="nav">
-      <a class="logo" href="/">Appu</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <div id="nav-links" class="nav-links">
-        <a href="/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-6 8 6"></path><path d="M6 10v8h12v-8"></path></svg><span>Home</span></a>
-        <a href="/about/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"></circle><path d="M5 19c1.5-3 4-4 7-4s5.5 1 7 4"></path></svg><span>About</span></a>
-        <a class="active" href="/projects/" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"></rect><rect x="14" y="4" width="6" height="6" rx="1"></rect><rect x="4" y="14" width="6" height="6" rx="1"></rect><rect x="14" y="14" width="6" height="6" rx="1"></rect></svg><span>Projects</span></a>
-        <a href="/services/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"></path></svg><span>Services</span></a>
-        <a href="/contact/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M3 8l9 6 9-6"></path></svg><span>Contact</span></a>
-      </div>
-    </nav>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Appu M</title>
+    <meta
+      name="description"
+      content="Projects by Appu M across mobile, backend, and IoT platforms."
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#f8faf8" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="logo" href="/" aria-label="Appu M home"
+          ><span class="monogram">am<span>.</span></span
+          ><span>Appu M</span></a
+        ><button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span class="sr-only">Toggle navigation</span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+        <div id="nav-links" class="nav-links">
+          <a href="/">Home</a
+          ><a href="/projects/" class="active" aria-current="page">Projects</a
+          ><a href="/about/">Experience</a><a href="/services/">Expertise</a
+          ><a href="/contact/">Contact</a
+          ><a
+            class="nav-resume"
+            href="/assets/APPUM_2026.pdf"
+            download="Appu_M_Resume_2026.pdf"
+            >Résumé <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </nav>
+    </header>
 
-  <main id="main">
-    <section class="page-hero reveal">
-      <p class="eyebrow">Projects</p>
-      <h1>Key projects across mobile, backend, and IoT.</h1>
-      <p>Each project highlights production delivery, real-time data, and scalable architecture.</p>
-    </section>
+    <main id="main">
+      <section class="page-hero reveal">
+        <p class="eyebrow">Projects</p>
+        <h1>Key projects across mobile, backend, and IoT.</h1>
+        <p>
+          Explore mobile products, real-time platforms, and embedded tools, with
+          the engineering details behind each build.
+        </p>
+      </section>
 
-        <section class="section">
-      <div class="projects-grid square-projects reveal">
-        
-          <article class="card project-card accent-card glass">
+      <section class="section">
+        <div class="projects-grid square-projects reveal">
+          <article
+            id="modbus-scanner"
+            class="card project-card accent-card glass"
+          >
+            <div class="project-media">
+              <div class="project-fallback">Modbus Scanner</div>
+            </div>
+            <div class="project-content">
+              <div class="project-top">
+                <h3 class="title-with-icon">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="6" y="6" width="12" height="12" rx="2"></rect>
+                    <path
+                      d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4"
+                    ></path>
+                  </svg>
+                  Automatic Modbus TCP/RTU Scanner
+                </h3>
+                <span class="badge public">Public</span>
+              </div>
+              <p>
+                An automatic Modbus discovery tool for the ESP32-P4 Nano that
+                finds responding devices and reads raw register values over TCP
+                or RS-485 RTU.
+              </p>
+              <ul class="list">
+                <li>
+                  Ethernet priority with Wi-Fi fallback and static IP fallback
+                  when DHCP is unavailable.
+                </li>
+                <li>
+                  Multi-unit discovery, including multiple responding unit IDs
+                  behind the same TCP endpoint.
+                </li>
+                <li>
+                  Readable USB serial scan summaries with responding unit IDs
+                  and register values.
+                </li>
+              </ul>
+              <div class="card-meta">
+                <span><strong>Platform:</strong> Waveshare ESP32-P4 Nano</span>
+                <span
+                  ><strong>Configuration:</strong> Firmware settings via
+                  ESP-IDF</span
+                >
+              </div>
+              <div class="project-footer">
+                <div class="inline-list">
+                  <span>ESP32-P4</span>
+                  <span>ESP-IDF</span>
+                  <span>Modbus TCP/RTU</span>
+                  <span>RS-485</span>
+                  <span>Ethernet / Wi-Fi</span>
+                </div>
+                <a
+                  class="text-link"
+                  href="https://github.com/Appu-Devloper/Modbus-Scanner"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Modbus Scanner source on GitHub (opens in a new tab)"
+                  >View source on GitHub <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article id="fleettrack" class="card project-card accent-card glass">
             <div class="project-media" data-asset="">
               <div class="project-fallback">FleetTrack Pro</div>
             </div>
             <div class="project-content">
               <div class="project-top">
-                <h3 class="title-with-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2"></rect><path d="M11 17h2"></path></svg> FleetTrack Pro</h3>
+                <h3 class="title-with-icon">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="7" y="3" width="10" height="18" rx="2"></rect>
+                    <path d="M11 17h2"></path>
+                  </svg>
+                  FleetTrack Pro
+                </h3>
                 <span class="badge public">Public</span>
               </div>
-              <p>Fleet tracking with hardware integration, subscriptions, payments, alerts, and live routing.</p>
+              <p>
+                Fleet tracking with hardware integration, subscriptions,
+                payments, alerts, and live routing.
+              </p>
               <div class="card-meta">
                 <span><strong>Role:</strong> Mobile + IoT lead</span>
                 <span><strong>Outcome:</strong> Real-time dispatching</span>
@@ -66,16 +162,27 @@
             </div>
           </article>
 
-          <article class="card project-card accent-card glass">
+          <article id="heiot" class="card project-card accent-card glass">
             <div class="project-media" data-asset="">
               <div class="project-fallback">HEIoT Dashboard</div>
             </div>
             <div class="project-content">
               <div class="project-top">
-                <h3 class="title-with-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 16V8"></path><path d="M12 16V6"></path><path d="M16 16V10"></path></svg> HEIoT Real-Time Dashboard</h3>
+                <h3 class="title-with-icon">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                    <path d="M8 16V8"></path>
+                    <path d="M12 16V6"></path>
+                    <path d="M16 16V10"></path>
+                  </svg>
+                  HEIoT Real-Time Dashboard
+                </h3>
                 <span class="badge private">Private</span>
               </div>
-              <p>WebSocket-driven IoT platform with charts, alerts, PDF reports, and scheduled emails.</p>
+              <p>
+                WebSocket-driven IoT platform with charts, alerts, PDF reports,
+                and scheduled emails.
+              </p>
               <div class="card-meta">
                 <span><strong>Role:</strong> Backend + data</span>
                 <span><strong>Outcome:</strong> Reduced latency</span>
@@ -92,16 +199,25 @@
             </div>
           </article>
 
-          <article class="card project-card accent-card glass">
+          <article id="streaming" class="card project-card accent-card glass">
             <div class="project-media" data-asset="">
               <div class="project-fallback">Streaming App</div>
             </div>
             <div class="project-content">
               <div class="project-top">
-                <h3 class="title-with-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2"></rect><path d="M11 17h2"></path></svg> Cross-Platform Streaming App</h3>
+                <h3 class="title-with-icon">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="7" y="3" width="10" height="18" rx="2"></rect>
+                    <path d="M11 17h2"></path>
+                  </svg>
+                  Cross-Platform Streaming App
+                </h3>
                 <span class="badge public">Public</span>
               </div>
-              <p>BLoC architecture, REST APIs, deep linking, gestures, push notifications.</p>
+              <p>
+                BLoC architecture, REST APIs, deep linking, gestures, push
+                notifications.
+              </p>
               <div class="card-meta">
                 <span><strong>Role:</strong> Flutter lead</span>
                 <span><strong>Outcome:</strong> 5,000+ installs</span>
@@ -118,16 +234,27 @@
             </div>
           </article>
 
-          <article class="card project-card accent-card glass">
+          <article id="metrology" class="card project-card accent-card glass">
             <div class="project-media" data-asset="">
               <div class="project-fallback">Metrology Suite</div>
             </div>
             <div class="project-content">
               <div class="project-top">
-                <h3 class="title-with-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 16V8"></path><path d="M12 16V6"></path><path d="M16 16V10"></path></svg> Metrology Calibration Suite</h3>
+                <h3 class="title-with-icon">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                    <path d="M8 16V8"></path>
+                    <path d="M12 16V6"></path>
+                    <path d="M16 16V10"></path>
+                  </svg>
+                  Metrology Calibration Suite
+                </h3>
                 <span class="badge private">Private</span>
               </div>
-              <p>Real-time measurement with GUI/CLI and automated Excel reporting.</p>
+              <p>
+                Real-time measurement with GUI/CLI and automated Excel
+                reporting.
+              </p>
               <div class="card-meta">
                 <span><strong>Role:</strong> Full-stack</span>
                 <span><strong>Outcome:</strong> 30% faster reports</span>
@@ -143,16 +270,30 @@
             </div>
           </article>
 
-          <article class="card project-card accent-card glass">
+          <article
+            id="pdf-extraction"
+            class="card project-card accent-card glass"
+          >
             <div class="project-media" data-asset="">
               <div class="project-fallback">PDF Extraction</div>
             </div>
             <div class="project-content">
               <div class="project-top">
-                <h3 class="title-with-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h6"></path></svg> PDF Extraction &amp; Validation</h3>
+                <h3 class="title-with-icon">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="4" y="3" width="16" height="18" rx="2"></rect>
+                    <path d="M8 7h8"></path>
+                    <path d="M8 11h8"></path>
+                    <path d="M8 15h6"></path>
+                  </svg>
+                  PDF Extraction &amp; Validation
+                </h3>
                 <span class="badge public">Public</span>
               </div>
-              <p>Python pipeline using local Gemma 3.7B for extraction, validation, and QA.</p>
+              <p>
+                Python pipeline using local Gemma 3.7B for extraction,
+                validation, and QA.
+              </p>
               <div class="card-meta">
                 <span><strong>Role:</strong> Backend lead</span>
                 <span><strong>Outcome:</strong> Automated validation</span>
@@ -168,20 +309,23 @@
             </div>
           </article>
         </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="footer">
-    <p>&copy; 2026 Appu. All rights reserved.</p>
-  </footer>
+    <footer class="footer">
+      <div>
+        <a class="logo" href="/">Appu M<span class="green">.</span></a>
+        <p>Mobile. Backend. Connected systems.</p>
+      </div>
+      <p>© 2026 Appu M</p>
+      <a
+        href="https://github.com/Appu-Devloper"
+        target="_blank"
+        rel="noreferrer"
+        >GitHub ↗</a
+      >
+    </footer>
 
-  <script src="../script.js"></script>
-</body>
+    <script src="../script.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
-

@@ -1,59 +1,37 @@
-﻿# Appu Portfolio
+# Appu M — Engineering Portfolio
 
-Modern, responsive portfolio site for Appu M with dedicated pages for About, Projects, Services, and Contact.
-
-## Live Site
-- https://appu-devloper.github.io/
-
-## Features
-- Clean, sectioned layout across multiple pages
-- Smooth reveal animations and parallax accents
-- Project and certificate carousels
-- Responsive navigation with mobile toggle
-- Contact form with validation
+Responsive portfolio for Appu M, featuring selected projects, career progression, technical expertise, education, and direct contact links.
 
 ## Pages
-- `/` (Home)
-- `/about/`
-- `/projects/`
-- `/services/`
-- `/contact/`
 
-## Local Development
-This is a static site, so you can open `index.html` directly. Some features (like the contact form backend) require a local server.
+- `/` — Introduction, selected work, engineering toolkit, and career summary
+- `/projects/` — Project contributions and technology stacks
+- `/about/` — Experience, skills, education, and certifications
+- `/services/` — Engineering expertise
+- `/contact/` — Email, telephone, GitHub, and résumé
 
-### Run a local server (optional)
-If you want to use the contact form backend locally:
+## Local preview
 
-1) Install dependencies:
-```
-npm install
+Serve the repository root so navigation and asset paths resolve correctly:
+
+```sh
+python3 -m http.server 4173
 ```
 
-2) Create `.env` from the example:
-```
-SENDINBLUE_API_KEY=your_key_here
-PORT=3000
-```
+Open http://localhost:4173. The site is static and deploys directly to GitHub Pages without a build step.
 
-3) Start the server:
-```
-npm start
-```
+## Editing
 
-Then open:
-- http://localhost:3000/
+Shared styles are in `styles.css`; navigation and certificate carousel behavior are in `script.js`. Each page contains its own semantic HTML. Update the shared navigation and footer across all five pages when changing them. The résumé is `assets/APPUM_2026.pdf`.
 
-## Contact Form Backend (Brevo / Sendinblue)
-The contact form posts to `/api/contact`, which sends an email via Brevo (Sendinblue) using the `SENDINBLUE_API_KEY` environment variable.
+Home-page project visuals are conceptual system diagrams, not product screenshots. Project claims and experience are based on the existing portfolio content. Replace or update them as your work changes.
 
-Notes:
-- GitHub Pages cannot run the Node backend. For production sending, use a server or serverless function.
-- Make sure the sender address is verified in your Brevo account.
+Content remains visible without JavaScript. The site includes keyboard navigation, reduced-motion support, responsive layouts, and print styles.
 
-## Tech Stack
-- HTML, CSS, JavaScript
-- Node.js (Express) for the optional contact API
+## Contact
+
+Contact links open the visitor’s email application. No backend is required. The existing optional Express server and `/api/contact` endpoint remain available for separate integrations; the portfolio does not submit to that endpoint. To run that server, install dependencies, configure `SENDINBLUE_API_KEY` in `.env` if using the API, and run `npm start`.
 
 ## License
+
 See `LICENSE`.
